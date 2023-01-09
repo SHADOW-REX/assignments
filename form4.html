@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Student Registration Form </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800&display=swap');
+
+        body {
+            background-image: linear-gradient(80deg, rgba(245, 245, 250, 0.951), #1066ad);
+            color: rgba(0, 0, 0, 0.761);
+        }
+
+        section {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            padding: 2em;
+            margin: 100px;
+            border-radius: 25px;
+            border-style: groove;
+            background-color: rgba(255, 255, 255, 0.284);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 1.4em;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 1.4em;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        input {
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            background-color: #fffdfd;
+            border-radius: 7px;
+            border-color: rgba(255, 255, 255, 0);
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            background-color: #ffffffa6;
+            border-radius: 7px;
+            border-color: rgba(255, 255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1> <u>Maharaja Surajmal Institute</u> </h1>
+        <h2> <u>Student Registration Form</u> </h2>
+    </section>
+    <section>
+        <form method="GET">
+            <label for="fname"> First Name: </label>
+            <input type="text" id="fname" name="fname">
+            &nbsp;
+            <label for="lname"> Last Name: </label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <p>Gender:
+                <input type="radio" id="gender0" name="gender" value="gender0">
+                <label for="gender0">Male</label>
+                <input type="radio" id="gender1" name="gender" value="gender1">
+                <label for="gender1">Female</label>
+                <input type="radio" id="gender2" name="gender" value="gender2">
+                <label for="gender2">Other</label>
+            </p><br>
+            <label for="DOB"> Date Of Birth: </label>
+            <input type="date" name="date"><br><br>
+            <label for="fathername">Father's Name:</label>
+            <input id="fathername" name="fathername">
+            <br><br>
+            <label for="mothername">Mother's Name:</label>
+            <input id="mothername" name="mothername">
+            <br><br>
+            <label for="address">Home Address:</label>
+            <br>
+            <textarea id="adress"></textarea>
+            <br><br>
+            <label for="nationality"> Nationality: </label>
+            <input type="text" id="National" name="Nation">
+            <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="Number" id="phone" name="phone">
+            <br><br>
+            <label for="10thmarks"> Aggregate in 10th:</label>
+            <input type="number" id="10thmarks" name="10thmarks" min="0" max="100">
+            <br><br>
+            <label for="12thmarks"> Aggregate in 12th:</label>
+            <input type="number" id="12thmarks" name="12thmarks" min="0" max="100">
+            <br><br>
+            <label for="course">Course:</label>
+            <select id="course">
+                <option value="none" hidden selected disabled>Select an option</option>
+                <option value="bca"> BCA </option>
+                <option vale="bba"> BBA </option>
+                <option value="bed"> B.Ed </option>
+                <option value="b.com"> B.Com </option>
+                <option value="btech "> B.Tech </option>
+            </select><br><br>
+            <p> What are your skills?</p>
+            <input type="checkbox" name="Good communication Skills" id="Communication">
+            <label for="Communication">Good communication Skills</label><br>
+            <input type="checkbox" name="Problem solving skills" id="Problem solving skills">
+            <label for="Problem solving skills">Problem solving skills</label><br>
+            <input type="checkbox" name="" id="leadership">
+            <label for="leadership">leadership</label>
+        </form><br>
+        <p>Please make sure you have the following documents: </p>
+        <input type="checkbox" id="doc1" name="doc1">
+        <label for="doc1"> Class 10th marksheet </label>
+        <br>
+        <input type="checkbox" id="doc2" name="doc2">
+        <label for="doc2"> CLass 12th marksheet </label>
+        <br>
+        <input type="checkbox" id="doc3" name="doc3">
+        <label for="doc3"> Aadhar Card</label>
+        <br>
+        <input type="checkbox" id="doc4" name="doc4">
+        <label for="doc4"> Caste certificate (if applicable)</label>
+        <br>
+        <input type="checkbox" id="doc4" name="doc4">
+        <label for="doc4"> Medical certificate </label>
+        <br><br>
+        <p>Any Previous Work Experience/Employment/Training?</p>
+        <label for="slider">0 - 10 Years</label>
+        <input type="range" min="0" max="10" id="slider">
+        <br><br><br>
+        <label for="GName1"> Guardian Name 1:</label>
+        <input type="text" id="Gname1" name="Gname"> <br><br>
+        Occupation: <input type="text" id="Occupation"><br><br>
+        Mobile number: <input type="Number" id="phone" name="phone"> <br> <br>
+        Relationship: <input type="text" id="relationship"><br><br>
+        Address: <textarea id="adress"></textarea><br><br>
+        <br><br>
+        <label for="GName2"> Guardian Name 2:</label>
+        <input type="text" id="Gname2" name="Gname"> <br><br>
+        Occupation:<input type="text" id="Occupation"><br><br>
+        Mobile number: <input type="Number" id="phone" name="phone"><br><br>
+        Relationship: <input type="text" id="relationship"><br><br>
+        Address: <textarea id="adress"></textarea><br><br>
+        <br><br>
+        <p>Personal Statement:</p>
+        <textarea rows="10" cols="40">
+        </textarea><br><br>
+        <label for="email">E-Mail ID</label>
+        <input type="email" id="email" name="email">
+        <p>&emsp;</p>
+        <label for="password"> Password </label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
