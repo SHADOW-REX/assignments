@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Pseudo Classes</title>
+    <style>
+      section{
+        background-color: #266e9e2a;
+        padding: 20px;
+        border-style: solid;
+        border-radius: 3rem;
+        font-size:25px;
+        font-weight: bold;
+        text-align: center;
+        margin: 150px;
+      }
+h1{
+  text-align: center;
+  color: #15b8f8;
+  text-shadow: 2em;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+body{
+  background: url("assets/cool2.png");
+}
+p{
+  color: #b5c768d7;
+  text-align: center;
+}
+/* unvisited link */
+a:link {
+  color: #0400ff;
+}
+
+/* activelink */
+a:active {
+  color: #ff0000;
+}
+
+/* mouse over link */
+a:hover {
+  color: #15f728;
+}
+
+/* selected link */
+a:visited {
+  color: #fbff0a;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Classes Example</h1>
+    <section>
+      <p>These are some links that use pseudo classes like
+        Hover,active,focus,visited.
+        These classes will make the link behave differently with the respective
+        action taken.<br>
+        See below example:
+      </p>
+      <p>The below link should change colour to blue, red, green, yellow on
+        "Unvisited, Active, Hover and Visited" actions respectively.</p>
+      <a href="https://www.w3schools.com" target="_blank" >w3schools</a>.
+    </section>
+  </body>
+</html>
