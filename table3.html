@@ -1,0 +1,103 @@
+<html>
+<head>
+       <title>Design a table and make use of attributes
+        colspan, rowspan, thead, tbody, tfoot, width, height, cellpadding,
+        cellspacing etc.</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800&display=swap');
+            
+            section {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            padding: 2em;
+            margin: 100px;
+            border-radius: 25px;
+            border-style: groove;
+            background-color: rgba(255, 255, 255, 0.284);
+            }
+            body{
+                background-image: url("assets/cool-background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+            }
+            h1{
+                font-size: 50px;
+                text-decoration: underline;
+                font-family: 'Roboto Slab', serif;
+                color:black;
+            }
+            section{
+                margin-top: 20%;
+                border-radius: 25px;
+                border-style: groove;
+                background-color: rgba(255, 255, 255, 0);
+            }
+            table{
+                font-size: 20px;
+                width: 70%;
+                text-align: center;
+                border-radius: 10px;
+                background-color: rgba(243, 238, 238, 0);
+                border-width: 5px;
+                border-color: black;
+            }
+            th,td{
+                padding: 10px;
+                border-radius: 3px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            td{
+                font-weight:500;
+            }
+            tbody tr:nth-child(odd) {
+                 background-color: #dbe95a;
+            }
+
+            tbody tr:nth-child(even) {
+                 background-color: #95ccff;
+            }
+            tfoot,thead{
+                  background-color: rgb(5, 4, 8);
+                  color: white;
+            }
+            .im{
+                background-color: #faf9f9ad;
+                margin-left: 30%;
+                text-align: left;
+                font-size: medium;
+                padding:1px;
+                width:300px;
+            }
+        </style>
+</head>
+<body>
+    <section>
+        <h1>Monthly Savings</h1>
+        <table align="center" class="im" >
+            <tr><th class="im">Name:</th><td class="im">&nbsp;Jai Kumar</td></tr>
+            <tr><th class="im">Year:</th><td class="im">&nbsp;2022</td></tr>
+            <tr><th class="im">Monthly Salary:</th><td class="im">&nbsp;Rs 90k</td></tr>
+            </table>
+        </table>
+        <br>
+        <table align="center" border="10px">
+            <thead>
+                <tr><th>S.no</th><th>Month</th><th>Savings</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>January</td><td>Rs 2,389</td></tr>
+                <tr><td>2</td><td>February</td><td>Rs 5,000</td></tr>
+                <tr><td>3</td><td>March</td><td rowspan="2">Rs 9,897</td></tr>
+                <tr><td>4</td><td>April</td></tr>
+                <tr><td>5</td><td>May</td><td>Rs 5,989</td></tr>
+                <tr><td>6</td><td>June</td><td>Rs 4,367</td></tr>
+                <tr><td>7</td><td>July</td><td>Rs 4,738</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">Total: </td><td colspan="2">Rs 32,380</td></tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+</html>
